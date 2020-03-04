@@ -53,7 +53,7 @@ h3{
 }
 
 .logo{
-    background-image: url('/images/logo.png');
+    background-image: url('../images/logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@ h3{
     font-family: 'oxanium';
     font-weight: 700;
     font-size: 4rem;
-    text-align: center;
+    margin-left: 20%;
     padding-top: 4rem;
 }
 
@@ -95,7 +95,7 @@ h3{
 }
 
 .bio-pic{
-    background-image: url('/images/rich.jpg');
+    background-image: url('../images/rich.jpg');
     filter: grayscale(100%);
     height: 25rem;
     width: 19rem;
@@ -105,7 +105,7 @@ h3{
     position: relative;
     top: 2.5rem;
     border: 25px solid transparent;
-    border-image: url('/images/border.png') 115 stretch;
+    border-image: url('../images/border.png') 115 stretch;
     margin: auto;
     box-shadow: 5px 10px #232020;
 }
@@ -122,7 +122,7 @@ h3{
     font-family: 'oxanium';
     font-weight: 700;
     font-size: 4rem;
-    text-align: center;
+    margin-left: 20%;
     padding-bottom: 4rem;
 }
 
@@ -144,10 +144,9 @@ h3{
 
 .work-image{
     background-color: #ff7315;
-    width: 20rem;
-    height: 20rem;
+    width: 80%;
     border: 25px solid transparent;
-    border-image: url('/images/border.png') 115 stretch;
+    border-image: url('../images/border.png') 115 stretch;
     box-shadow: 5px 10px #232020;
     margin: 0 2rem 4rem 2rem;
 }
@@ -165,8 +164,8 @@ h3{
     font-size: 4rem;
     text-align: center;
     padding-top: 2rem;
-    background-image: url('/images/orange-paint-swipe.jpg');
-    background-color: #f4f4f4;
+    background-image: url('../images/orange-paint-swipe.jpg');
+    background-color: transparent;
 }
 
 /* footer */
@@ -198,10 +197,24 @@ h3{
     padding: 1rem;
 }
 
-@media only screen and (max-width: 768px){
+/* laptop/desktop size */
+@media only screen and (max-width: 800){
 
 }
 
-@media only screen and (max-width: 412px){
+/* tablet size */
+@media only screen and (min-width: 800px){
+    .work-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+/* mobile size */
+@media only screen and (min-width: 440px){
+    .nav-bar-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    
 }
