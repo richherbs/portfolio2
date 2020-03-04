@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    height: 100%;
+    height: 30rem;
     margin: auto;
     row-gap: 2rem;
 }
@@ -193,7 +193,7 @@ body::-webkit-scrollbar-thumb{
 
 .work-text-container h1,h3{
     position: relative;
-    top: 35%;
+    top: 15%;
     text-align: center;
     color: #232020;
 }
