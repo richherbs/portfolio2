@@ -73,7 +73,8 @@ h3{
     font-family: 'oxanium';
     font-weight: 700;
     font-size: 4rem;
-    margin-left: 20%;
+    margin: auto;
+    width: 80%;
     padding-top: 4rem;
 }
 
@@ -122,7 +123,8 @@ h3{
     font-family: 'oxanium';
     font-weight: 700;
     font-size: 4rem;
-    margin-left: 20%;
+    margin: auto;
+    width: 80%;
     padding-bottom: 4rem;
 }
 
@@ -159,12 +161,17 @@ h3{
 }
 
 .hire-me{
+    width: 80%;
+    margin: auto;
     font-family: 'oxanium';
     font-weight: 700;
     font-size: 4rem;
     text-align: center;
-    padding-top: 2rem;
+    padding: 3rem;
     background-image: url('../images/orange-paint-swipe.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: transparent;
 }
 
@@ -197,24 +204,23 @@ h3{
     padding: 1rem;
 }
 
-/* laptop/desktop size */
-@media only screen and (max-width: 800){
-
+/* mobile size */
+@media only screen and (max-width: 440px) {
+    body {
+        display: none;
+    }
+    .nav-bar-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* tablet size */
-@media only screen and (min-width: 800px){
-    .work-container{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* mobile size */
-@media only screen and (min-width: 440px){
+@media only screen and (max-width: 800px){
     .nav-bar-container{
+        grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
-        grid-template-columns: 1fr;
     }
-
-    
+    .logo{
+       display: none;
+   }
 }
