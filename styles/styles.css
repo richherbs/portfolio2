@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'oxanium';
+    color: #232020;
+}
+
+h3{
+    font-family: 'caladea';
+    color: #232020;
+}
+
+/* nav */
+.nav-bar{
+    width: 100%;
+    height: 10%;
+    background-color: #3a3535;
+    color: #f4f4f4;
+}
+
+.nav-bar-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.nav-link{
+    border: 2px solid #f4f4f4;
+    margin: 1rem;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.nav-link:hover{
+    background-color: #ff7315;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 2rem;
+    font-family: 'oxanium';
+    font-weight: lighter;
+}
+
+.logo{
+    background-image: url('/images/logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 3.5rem;
+    width: 3.5rem;
+    float: left;
+    margin: auto;
+}
+
+/* Bio */
+#bio{
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.bio-title{
+    font-family: 'oxanium';
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.bio-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding-bottom: 5rem;
+} 
+
+.bio-text{
+    margin: 6rem 6rem;
+}
+
+.bio-text p{
+    font-family: 'caladea';
+    line-height: 2rem;;
+}
+
+.bio-pic{
+    background-image: url('/images/rich.jpg');
+    filter: grayscale(100%);
+    height: 25rem;
+    width: 19rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 2.5rem;
+    border: 25px solid transparent;
+    border-image: url('/images/border.png') 115 stretch;
+    margin: auto;
+    box-shadow: 5px 10px #232020;
+}
+
+/* work */
+
+#work{
+    background-color: #f4f4f4;
+    width: 100%;
+    padding-bottom: 6rem;
+}
+
+.work-title{
+    font-family: 'oxanium';
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+}
+
+.work-card{
+    margin: auto;
+}
+
+.work-card a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.work-image{
+    background-color: #ff7315;
+    width: 20rem;
+    height: 20rem;
+    border: 25px solid transparent;
+    border-image: url('/images/border.png') 115 stretch;
+    box-shadow: 5px 10px #232020;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.work-image h1,h3{
+    position: relative;
+    top: 35%;
+    text-align: center;
+    color: #232020;
+}
+
+.hire-me{
+    font-family: 'oxanium';
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+    background-image: url('/images/orange-paint-swipe.jpg');
+    background-color: #f4f4f4;
+}
+
+/* footer */
+#contacts{
+    width: 100%;
+    background-color: #232020;
+    margin: 0 auto 3rem auto;
+}
+
+.social-links{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    text-align: center;
+}
+
+.social-image{
+    width: 2rem;
+    margin: 1rem auto;
+}
+
+.copyright{
+    text-align: center;
+    color: #f4f4f4;
+    margin: auto;
+    font-family: 'oxanium';
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 412px){
+
+}
