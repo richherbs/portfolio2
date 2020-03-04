@@ -17,26 +17,13 @@ h3{
     color: #232020;
 }
 
-body::-webkit-scrollbar{
-    width: thin;
-}
-
-body::-webkit-scrollbar-track{
-    background: #3a3535;
-}
-
-body::-webkit-scrollbar-thumb{
-    background: #ff7315;
-    border-radius: 6px;
-    border: 3px solid #232020;
-}
-
 /* nav */
 .nav-bar{
     width: 100%;
     height: 10%;
     background-color: #3a3535;
     color: #f4f4f4;
+    /* position: fixed; */
 }
 
 .nav-bar-container{
@@ -61,9 +48,9 @@ body::-webkit-scrollbar-thumb{
 .nav-link a{
     text-decoration: none;
     color: #f4f4f4;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-family: 'oxanium', sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .logo{
@@ -102,11 +89,19 @@ body::-webkit-scrollbar-thumb{
 
 .bio-text{
     margin: 6rem 6rem;
+    height: 100%;
 }
 
-.bio-text p{
+.bio-intro{
+    font-family: 'oxanium', sans-serif;
+    font-size: 3rem;
+}
+
+.bio-story{
     font-family: 'caladea', serif;
-    line-height: 2rem;;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    padding-top: 10%;
 }
 
 .bio-pic{
@@ -146,9 +141,10 @@ body::-webkit-scrollbar-thumb{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    height: 30rem;
+    height: 35rem;
     margin: auto;
     row-gap: 2rem;
+    padding-bottom: 7%;
 }
 
 .work-card{
@@ -182,7 +178,7 @@ body::-webkit-scrollbar-thumb{
     opacity: 80%;
     text-align: center;
     background-color: #f4f4f4;
-    top: 10%;
+    top: 6%;
     height: 100%;
     width: 100%;
 }
@@ -191,7 +187,16 @@ body::-webkit-scrollbar-thumb{
     display: block;
 }
 
-.work-text-container h1,h3{
+.project-title{
+    font-family: 'oxanium', sans-serif;
+    font-size: 2rem;
+    position: relative;
+    top: 15%;
+    text-align: center;
+    color: #232020;
+}
+
+.project-description{
     position: relative;
     top: 15%;
     text-align: center;
