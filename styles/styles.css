@@ -8,12 +8,12 @@ body{
 }
 
 h1{
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     color: #232020;
 }
 
 h3{
-    font-family: 'caladea';
+    font-family: 'caladea', serif;
     color: #232020;
 }
 
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
     color: #f4f4f4;
     font-size: 2rem;
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: lighter;
 }
 
@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .bio-title{
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: 700;
     font-size: 4rem;
     margin: auto;
@@ -105,7 +105,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .bio-text p{
-    font-family: 'caladea';
+    font-family: 'caladea', serif;
     line-height: 2rem;;
 }
 
@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .work-title{
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: 700;
     font-size: 4rem;
     margin: auto;
@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb{
 .hire-me{
     width: 80%;
     margin: auto;
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: 700;
     font-size: 4rem;
     text-align: center;
@@ -220,7 +220,7 @@ body::-webkit-scrollbar-thumb{
 #contacts{
     width: 100%;
     background-color: #232020;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
 }
 
 .social-links{
@@ -240,7 +240,7 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     color: #f4f4f4;
     margin: auto;
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-size: 1rem;
     padding: 1rem;
 }
