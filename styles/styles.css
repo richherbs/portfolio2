@@ -17,6 +17,20 @@ h3{
     color: #232020;
 }
 
+body::-webkit-scrollbar{
+    width: thin;
+}
+
+body::-webkit-scrollbar-track{
+    background: #3a3535;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ff7315;
+    border-radius: 6px;
+    border: 3px solid #232020;
+}
+
 /* nav */
 .nav-bar{
     width: 100%;
@@ -151,9 +165,21 @@ h3{
     border-image: url('../images/border.png') 115 stretch;
     box-shadow: 5px 10px #232020;
     margin: 0 2rem 4rem 2rem;
+    position: relative;
 }
 
-.work-image h1,h3{
+.work-text-container{
+    display: none;
+    position: absolute;
+    opacity: 80%;
+}
+
+.work-image:active .work-text-container, .work-image:hover .work-text-container{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.work-text-container h1,h3{
     position: relative;
     top: 35%;
     text-align: center;
@@ -168,11 +194,14 @@ h3{
     font-size: 4rem;
     text-align: center;
     padding: 3rem;
-    background-image: url('../images/orange-paint-swipe.jpg');
+    background-image: url('../images/orange-paint-swipe.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
+    text-decoration: none;
+    color: #232020;
+    display: block;
 }
 
 /* footer */
@@ -204,16 +233,6 @@ h3{
     padding: 1rem;
 }
 
-/* mobile size */
-@media only screen and (max-width: 440px) {
-    body {
-        display: none;
-    }
-    .nav-bar-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* tablet size */
 @media only screen and (max-width: 800px){
     .nav-bar-container{
@@ -223,4 +242,35 @@ h3{
     .logo{
        display: none;
    }
+}
+
+/* mobile size */
+@media only screen and (max-width: 440px) {
+    .nav-bar-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.activity1{
+    background-image: url('../images/activity1.png');
+}
+
+.challenge1{
+    background-image: url('../images/challenge1.png');
+}
+
+.paircoding{
+    background-image: url('../images/paircoding.png');
+}
+
+.pilotshop{
+    background-image: url('../images/pilotshop.png');
+}
+
+.portfolio1{
+    background-image: url('../images/portfolio1.png');
+}
+
+.portfolio2{
+    background-image: url('../images/portfolio2.png');
 }
