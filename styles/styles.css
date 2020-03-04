@@ -107,8 +107,8 @@ h3{
 .bio-pic{
     background-image: url('../images/rich.jpg');
     filter: grayscale(100%);
-    height: 25rem;
-    width: 19rem;
+    height: 50vw;
+    /* width: 76%; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -143,14 +143,14 @@ h3{
     width: 80%;
     height: 35rem;
     margin: auto;
-    row-gap: 2rem;
+    row-gap: 1rem;
     padding-bottom: 7%;
 }
 
 .work-card{
     margin: auto;
-    width: 100%;
-    height: 100%;
+    height: 90%;
+    width: 90%
 }
 
 .work-card a{
@@ -159,17 +159,15 @@ h3{
 }
 
 .work-image{
-    background-color: #ff7315;
-    border: 25px solid transparent;
-    border-image: url('../images/border.png') 115 stretch;
+    border: 20px solid transparent;
+    border-image: url('../images/border.png') 140 stretch;
     box-shadow: 5px 10px #232020;
-    margin: 0 2rem 4rem 2rem;
-    position: relative;
-    background-position: center;
-    background-repeat: initial;
+    background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.3s ease;
+    width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .work-text-container{
@@ -191,7 +189,7 @@ h3{
     font-family: 'oxanium', sans-serif;
     font-size: 2rem;
     position: relative;
-    top: 15%;
+    top: 10%;
     text-align: center;
     color: #232020;
 }
