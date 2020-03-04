@@ -8,13 +8,27 @@ body{
 }
 
 h1{
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     color: #232020;
 }
 
 h3{
-    font-family: 'caladea';
+    font-family: 'caladea', serif;
     color: #232020;
+}
+
+body::-webkit-scrollbar{
+    width: thin;
+}
+
+body::-webkit-scrollbar-track{
+    background: #3a3535;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ff7315;
+    border-radius: 6px;
+    border: 3px solid #232020;
 }
 
 /* nav */
@@ -48,12 +62,12 @@ h3{
     text-decoration: none;
     color: #f4f4f4;
     font-size: 2rem;
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: lighter;
 }
 
 .logo{
-    background-image: url('/images/logo.png');
+    background-image: url('../images/logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,10 +84,11 @@ h3{
 }
 
 .bio-title{
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: 700;
     font-size: 4rem;
-    text-align: center;
+    margin: auto;
+    width: 80%;
     padding-top: 4rem;
 }
 
@@ -90,12 +105,12 @@ h3{
 }
 
 .bio-text p{
-    font-family: 'caladea';
+    font-family: 'caladea', serif;
     line-height: 2rem;;
 }
 
 .bio-pic{
-    background-image: url('/images/rich.jpg');
+    background-image: url('../images/rich.jpg');
     filter: grayscale(100%);
     height: 25rem;
     width: 19rem;
@@ -105,7 +120,7 @@ h3{
     position: relative;
     top: 2.5rem;
     border: 25px solid transparent;
-    border-image: url('/images/border.png') 115 stretch;
+    border-image: url('../images/border.png') 115 stretch;
     margin: auto;
     box-shadow: 5px 10px #232020;
 }
@@ -119,10 +134,11 @@ h3{
 }
 
 .work-title{
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-weight: 700;
     font-size: 4rem;
-    text-align: center;
+    margin: auto;
+    width: 80%;
     padding-bottom: 4rem;
 }
 
@@ -130,11 +146,15 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
+    height: 30rem;
     margin: auto;
+    row-gap: 2rem;
 }
 
 .work-card{
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .work-card a{
@@ -144,36 +164,63 @@ h3{
 
 .work-image{
     background-color: #ff7315;
-    width: 20rem;
-    height: 20rem;
     border: 25px solid transparent;
-    border-image: url('/images/border.png') 115 stretch;
+    border-image: url('../images/border.png') 115 stretch;
     box-shadow: 5px 10px #232020;
     margin: 0 2rem 4rem 2rem;
+    position: relative;
+    background-position: center;
+    background-repeat: initial;
+    background-size: cover;
+    transition: all 0.3s ease;
+    height: 100%;
 }
 
-.work-image h1,h3{
+.work-text-container{
+    display: none;
+    position: absolute;
+    opacity: 80%;
+    text-align: center;
+    background-color: #f4f4f4;
+    top: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.work-image:active .work-text-container, .work-image:hover .work-text-container{
+    display: block;
+}
+
+.work-text-container h1,h3{
     position: relative;
-    top: 35%;
+    top: 15%;
     text-align: center;
     color: #232020;
 }
 
 .hire-me{
-    font-family: 'oxanium';
+    width: 80%;
+    margin: auto;
+    font-family: 'oxanium', sans-serif;
     font-weight: 700;
     font-size: 4rem;
     text-align: center;
-    padding-top: 2rem;
-    background-image: url('/images/orange-paint-swipe.jpg');
-    background-color: #f4f4f4;
+    padding: 3rem;
+    background-image: url('../images/orange-paint-swipe.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    text-decoration: none;
+    color: #232020;
+    display: block;
 }
 
 /* footer */
 #contacts{
     width: 100%;
     background-color: #232020;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
 }
 
 .social-links{
@@ -193,15 +240,49 @@ h3{
     text-align: center;
     color: #f4f4f4;
     margin: auto;
-    font-family: 'oxanium';
+    font-family: 'oxanium', sans-serif;
     font-size: 1rem;
     padding: 1rem;
 }
 
-@media only screen and (max-width: 768px){
-
+/* tablet size */
+@media only screen and (max-width: 800px){
+    .nav-bar-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .logo{
+       display: none;
+   }
 }
 
-@media only screen and (max-width: 412px){
+/* mobile size */
+@media only screen and (max-width: 440px) {
+    .nav-bar-container {
+        grid-template-columns: 1fr;
+    }
+}
 
+.activity1{
+    background-image: url('../images/activity1.png');
+}
+
+.challenge1{
+    background-image: url('../images/challenge1.png');
+}
+
+.paircoding{
+    background-image: url('../images/paircoding.png');
+}
+
+.pilotshop{
+    background-image: url('../images/pilotshop.png');
+}
+
+.portfolio1{
+    background-image: url('../images/portfolio1.png');
+}
+
+.portfolio2{
+    background-image: url('../images/portfolio2.png');
 }
