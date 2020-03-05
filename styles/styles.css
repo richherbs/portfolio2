@@ -24,9 +24,9 @@ body{
 
 .nav-link{
     border: 2px solid #f4f4f4;
-    margin: 0 0 1rem 0;
+    margin: 1rem 10px;
     display: inline-block;
-    padding: 0 20px;
+    padding: 5px 20px 0 20px;
     text-align: center;
 }
 
@@ -55,7 +55,7 @@ body{
     height: 3.5rem;
     width: 3.5rem;
     float: left;
-    margin: auto;
+    margin: 1rem 0 1rem 0;
 }
 
 /* Bio */
@@ -273,6 +273,7 @@ body{
 
     .nav-link{
         display: none;
+        margin: 0 auto 1rem auto;
     }
 
     .nav-bar-container:active{
