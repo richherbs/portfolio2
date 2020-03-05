@@ -152,6 +152,10 @@ body{
     color: #f4f4f4;
 }
 
+.work-image{
+    position: relative;
+}
+
 .work-image img{
     border: 20px solid transparent;
     border-image: url('../images/border.png') 140 stretch;
@@ -160,21 +164,22 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
+    z-index: 0;
 }
 
 .work-text-container{
-    display: none;
     position: absolute;
-    opacity: 80%;
+    opacity: 0%;
     text-align: center;
     background-color: #ff7315;
-    top: 6%;
     height: 100%;
     width: 100%;
+    z-index: 1;
 }
 
 .work-image:active .work-text-container, .work-image:hover .work-text-container{
-    display: block;
+    opacity: 80%;
+    transition: all 0.3s ease;
 }
 
 .project-title{
