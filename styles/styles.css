@@ -276,16 +276,16 @@ body{
         margin: 0 auto 1rem auto;
     }
 
-    .nav-bar-container:active{
+    .nav-bar-container:hover{
         height: 10rem;
         transition-delay: 0.5s;
     }
 
-    .nav-bar-container:active .nav-link{
+    .nav-bar-container:hover .nav-link{
         display: block;
     }
 
-    .nav-bar-container:active .nav-cross{
+    .nav-bar-container:hover .nav-cross{
         display: none;
     }
 
