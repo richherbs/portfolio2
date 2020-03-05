@@ -3,7 +3,6 @@
 }
 
 body{
-    margin: auto;
     padding: 0;
     background-color: #f4f4f4;
 }
@@ -253,6 +252,7 @@ body{
 
    .bio-container{
         grid-template-columns: 1fr;
+        margin: auto;
    }
 
    .work-container{
@@ -275,6 +275,10 @@ body{
         display: none;
     }
 
+    .nav-bar{
+        margin-top: -1rem;
+    }
+
     .nav-bar-container:active {
         height: 10rem;
     }
@@ -285,6 +289,11 @@ body{
 
     .nav-bar-container:active .nav-cross{
         display: none;
+    }
+
+    .bio-pic{
+        width: 100%;
+        height: auto;
     }
 
     .bio-title, .work-title{
@@ -303,7 +312,7 @@ body{
     }
 
     .work-image img{
-        width: 16rem;
+        width: 100%;
     }
 
     .bio-container{
