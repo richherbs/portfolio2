@@ -24,7 +24,7 @@ body{
 
 .nav-link{
     border: 2px solid #f4f4f4;
-    margin: 1rem;
+    margin: 0 0 1rem 0;
     display: inline-block;
     padding: 0 20px;
     text-align: center;
@@ -44,6 +44,7 @@ body{
 
 .nav-hamburger, .nav-cross{
     display: none;
+    text-align: center;
 }
 
 .logo{
@@ -276,6 +277,7 @@ body{
 
     .nav-bar-container:active{
         height: 10rem;
+        transition-delay: 0.5s;
     }
 
     .nav-bar-container:active .nav-link{
@@ -319,28 +321,4 @@ body{
     .bio-pic{
         height: 75vw;
     }
-}
-
-.activity1{
-    background-image: url("../images/activity1.png");
-}
-
-.challenge1{
-    background-image: url("../images/challenge1.png");
-}
-
-.paircoding{
-    background-image: url("../images/paircoding.png");
-}
-
-.pilotshop{
-    background-image: url("../images/pilotshop.png");
-}
-
-.portfolio1{
-    background-image: url("../images/portfolio1.png");
-}
-
-.portfolio2{
-    background-image: url("../images/portfolio2.png");
 }
