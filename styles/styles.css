@@ -13,7 +13,6 @@ body{
     height: 10%;
     background-color: #3a3535;
     color: #f4f4f4;
-    /* position: fixed; */
 }
 
 .nav-bar-container{
@@ -39,7 +38,7 @@ body{
     text-decoration: none;
     color: #f4f4f4;
     font-size: 1.75rem;
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-weight: 300;
 }
 
@@ -48,7 +47,7 @@ body{
 }
 
 .logo{
-    background-image: url('../images/logo.png');
+    background-image: url("../images/logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +64,7 @@ body{
 }
 
 .bio-title{
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-weight: 700;
     font-size: 4rem;
     margin: auto;
@@ -87,19 +86,19 @@ body{
 }
 
 .bio-intro{
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-size: 3rem;
 }
 
 .bio-story{
-    font-family: 'caladea', serif;
+    font-family: "caladea", serif;
     line-height: 1.5rem;
     font-size: 1.5rem;
     padding-top: 10%;
 }
 
 .bio-pic{
-    background-image: url('../images/rich.jpg');
+    background-image: url("../images/rich.jpg");
     filter: grayscale(100%);
     height: 50vw;
     /* width: 76%; */
@@ -109,7 +108,7 @@ body{
     position: relative;
     top: 2.5rem;
     border: 25px solid transparent;
-    border-image: url('../images/border.png') 115 stretch;
+    border-image: url("../images/border.png") 115 stretch;
     margin: auto;
     box-shadow: 5px 10px #232020;
 }
@@ -123,7 +122,7 @@ body{
 }
 
 .work-title{
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-weight: 700;
     font-size: 4rem;
     margin: auto;
@@ -142,9 +141,6 @@ body{
 
 .work-card{
     margin: 1rem;
-    height: 90%;
-    width: 90%;
-
 }
 
 .work-card a{
@@ -158,7 +154,7 @@ body{
 
 .work-image img{
     border: 20px solid transparent;
-    border-image: url('../images/border.png') 140 stretch;
+    border-image: url("../images/border.png") 140 stretch;
     box-shadow: 5px 10px #232020;
     transition: all 0.3s ease;
     width: 100%;
@@ -183,11 +179,10 @@ body{
 }
 
 .project-title{
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-size: 2rem;
     position: relative;
     top: 10%;
-    text-align: center;
     color: #232020;
 }
 
@@ -201,12 +196,12 @@ body{
 .hire-me{
     width: 80%;
     margin: auto;
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-weight: 700;
     font-size: 4rem;
     text-align: center;
     padding: 3rem;
-    background-image: url('../images/orange-paint-swipe.png');
+    background-image: url("../images/orange-paint-swipe.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -240,7 +235,7 @@ body{
     text-align: center;
     color: #f4f4f4;
     margin: auto;
-    font-family: 'oxanium', sans-serif;
+    font-family: "oxanium", sans-serif;
     font-size: 1rem;
     padding: 1rem;
 }
@@ -267,7 +262,7 @@ body{
 
 /* mobile size */
 @media only screen and (max-width: 28rem) {
-    .nav-bar-container, .nav-cross {
+    .nav-bar-container, .nav-cross{
         margin: auto;
         display: block;
     }
@@ -280,11 +275,7 @@ body{
         display: none;
     }
 
-    .nav-bar{
-        margin-top: -1rem;
-    }
-
-    .nav-bar-container:active {
+    .nav-bar-container:active{
         height: 10rem;
     }
 
@@ -312,8 +303,6 @@ body{
     .work-container{
         display: block;
         width: 20rem;
-        /* height: 14rem; */
-        /* overflow: auto; */
     }
 
     .work-image img{
@@ -334,25 +323,25 @@ body{
 }
 
 .activity1{
-    background-image: url('../images/activity1.png');
+    background-image: url("../images/activity1.png");
 }
 
 .challenge1{
-    background-image: url('../images/challenge1.png');
+    background-image: url("../images/challenge1.png");
 }
 
 .paircoding{
-    background-image: url('../images/paircoding.png');
+    background-image: url("../images/paircoding.png");
 }
 
 .pilotshop{
-    background-image: url('../images/pilotshop.png');
+    background-image: url("../images/pilotshop.png");
 }
 
 .portfolio1{
-    background-image: url('../images/portfolio1.png');
+    background-image: url("../images/portfolio1.png");
 }
 
 .portfolio2{
-    background-image: url('../images/portfolio2.png');
+    background-image: url("../images/portfolio2.png");
 }
