@@ -1,0 +1,80 @@
+body{
+    font-family: "Muli";
+}
+
+.logo-container{
+    display: flex;
+    align-items: stretch;
+    width: fit-content;
+    margin: 20%;
+}
+
+.logo-text{
+    margin: auto;
+    font-size: 4rem;
+    text-align: right;
+    position: relative;
+    bottom: 8px;
+    font-weight: 900;
+    color: #b1b1b1;
+}
+
+.logo-image{
+    background: conic-gradient(#478ead  0deg 120deg, #315071 120deg 240deg, #9cb870 240deg 360deg);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.logo-square{
+    background-color: #e4793b;
+    height: 80px;
+    width: 65px;
+    position: absolute;
+    top: 325px;
+    left: 367px;
+}
+
+.letter-mask{
+    padding-top: -3rem;
+    border-radius: 40% 0 0 0;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.a-mask{
+    background-color: transparent;
+    display: block;
+    height: 75px;
+    position: relative;
+    bottom: 62px;
+    right: 8px;
+}
+
+.dimensions-lines{
+    height: 30px;
+    width: 202px;
+    position: relative;
+    border-bottom: 42px solid white;
+}
+
+.a-1{
+    transform: rotate(67deg);
+    left: 71px;
+    top: 119px;
+}
+
+.a-2{
+    transform: rotate(113deg);
+    border-radius: 0 50px;
+    bottom: -45px;
+    right: 20px;
+}
+
+.a-3{
+    width: 115px;
+    left: 55px;
+}

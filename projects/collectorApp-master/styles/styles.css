@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    background-image: url('../images/siteBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    color: #cfd186;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: #552244;
+    font-size: 6rem;
+    text-align: center;
+    margin: 10%;
+    border: 2px solid #cfd186;
+    border-radius: 20px;
+}
+
+button{
+    background-color: #5b8c5a;
+    color: #cfd186;
+    border: 1px solid #cfd186;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #552244;
+}
+
+a{
+    text-decoration: none;
+    color: #cfd186;
+}
+
+input, select{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #cfd186;
+}
+
+select{
+    appearance: none;
+    -webkit-appearance: none;    
+    -moz-appearance: none;
+}
+
+.add-edit-input{
+    padding: 10px 0;
+}
+
+.card-container{
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    max-width: 90rem;
+}
+
+.card{
+    background-color: #596157;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #cfd186;
+}
+
+.bike-image{
+    margin-top: 20px;
+    border: 2px solid #cfd186;
+    border-radius: 20px;
+    width: 95%; 
+    overflow: hidden;
+}
+
+.card-info-container{
+    margin: 20px auto 0 10%;
+    font-family: 'Martel', serif;
+}
+
+.card-info-container section{
+    text-align: left;
+}
+
+.card-button-container{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.card-button-container button{
+    width: 90%;
+    padding: 10% 0;
+}
+
+.add-form{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.button-add{
+    padding: 40px;
+    font-size: 30px;
+}
+
+.add-bike-form{
+    width: 80%;
+    margin: auto;
+}
+
+.add-bike-form button{
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 72rem){
+    h1{
+        font-size: 3.75rem;
+    }
+}
+
+@media only screen and (max-width: 72rem){
+    h1{
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 50rem){
+
+
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 40rem){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 30rem){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+
+    .button-add{
+        width: 95%;
+    }
+}
